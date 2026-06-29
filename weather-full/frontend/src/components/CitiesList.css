@@ -1,0 +1,14 @@
+.cl-wrap { display:flex; flex-direction:column; gap:10px; }
+.cl-header { display:flex; align-items:center; justify-content:space-between; }
+.cl-show-all { background:none; border:none; color:var(--text-dim); font-size:12px; }
+.cl-show-all:hover { color:var(--text-muted); }
+.cl-list { display:flex; flex-direction:column; gap:8px; }
+.cl-row { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:12px 14px; display:flex; align-items:center; gap:10px; cursor:pointer; width:100%; text-align:left; transition:all .15s; color:var(--text); }
+.cl-row:hover { background:var(--bg-card2); transform:translateX(2px); }
+.cl-info { flex:1; }
+.cl-country { font-size:10px; color:var(--text-dim); margin-bottom:1px; }
+.cl-city { font-size:14px; font-weight:500; }
+.cl-cond { font-size:11px; color:var(--text-muted); margin-top:1px; }
+.cl-right { display:flex; align-items:center; gap:6px; flex-shrink:0; }
+.cl-emoji { font-size:26px; }
+.cl-temp { font-size:17px; font-weight:300; }

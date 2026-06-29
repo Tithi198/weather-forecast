@@ -1,0 +1,27 @@
+.settings-box { max-width:480px; padding:0; overflow:hidden; }
+.settings-header { display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--border); }
+.settings-title { font-size:16px; font-weight:600; color:var(--text); }
+.settings-body { padding:8px 0; max-height:60vh; overflow-y:auto; }
+.settings-section { padding:16px 24px; border-bottom:1px solid var(--border); }
+.settings-section:last-child { border-bottom:none; }
+.settings-section-title { font-size:11px; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px; }
+.settings-row { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:12px; }
+.settings-row:last-child { margin-bottom:0; }
+.settings-row-info { flex:1; }
+.sr-label { font-size:13px; color:var(--text); font-weight:500; }
+.sr-desc { font-size:11px; color:var(--text-muted); margin-top:2px; }
+.theme-toggle-wrap { display:flex; background:var(--bg-card); border-radius:10px; padding:3px; border:1px solid var(--border); gap:2px; }
+.tt-opt { background:none; border:none; color:var(--text-muted); font-size:12px; padding:5px 12px; border-radius:7px; transition:all .15s; white-space:nowrap; }
+.tt-opt.active { background:var(--accent); color:#fff; }
+.settings-input { background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:8px 12px; color:var(--text); font-size:13px; outline:none; width:160px; }
+.settings-input:focus { border-color:var(--accent); }
+.toggle { width:44px; height:24px; border-radius:12px; background:var(--bg-card2); border:1px solid var(--border); position:relative; transition:background .2s; flex-shrink:0; }
+.toggle.on { background:var(--accent); border-color:var(--accent); }
+.toggle-knob { position:absolute; top:2px; left:2px; width:18px; height:18px; background:#fff; border-radius:50%; transition:transform .2s; display:block; box-shadow:0 1px 3px rgba(0,0,0,.3); }
+.toggle.on .toggle-knob { transform:translateX(20px); }
+.test-notif-btn { width:100%; background:var(--accent-bg); border:1px solid var(--accent); color:var(--accent); border-radius:10px; padding:9px; font-size:13px; font-weight:500; margin-top:10px; transition:all .15s; }
+.test-notif-btn:hover { background:var(--accent); color:#fff; }
+.settings-footer { display:flex; gap:10px; padding:16px 24px; border-top:1px solid var(--border); }
+.settings-cancel { flex:1; background:var(--bg-card); border:1px solid var(--border); color:var(--text-muted); border-radius:10px; padding:10px; font-size:13px; }
+.settings-save { flex:2; background:var(--accent); border:none; color:#fff; border-radius:10px; padding:10px; font-size:13px; font-weight:600; transition:opacity .15s; }
+.settings-save:hover { opacity:.88; }

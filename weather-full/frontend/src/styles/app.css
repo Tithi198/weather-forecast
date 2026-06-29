@@ -1,0 +1,98 @@
+/* ── Layout shells ───────────────────────────────────────────── */
+.app-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+}
+.dashboard {
+  background: var(--bg-app);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1300px;
+  overflow: hidden;
+  box-shadow: 0 0 80px var(--shadow);
+  position: relative;
+}
+.dashboard-body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  min-height: calc(100vh - 80px);
+}
+.main-panel {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+.sidebar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+/* ── View toggle ─────────────────────────────────────────────── */
+.tab-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.view-pills {
+  display: flex;
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 3px;
+  gap: 2px;
+  border: 1px solid var(--border);
+}
+.view-pill {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  font-family: inherit;
+}
+.view-pill:hover  { color: var(--text-muted); }
+.view-pill.active { background: var(--bg-card2); color: var(--text); }
+
+/* ── Error bar ───────────────────────────────────────────────── */
+.error-bar {
+  background: rgba(239,68,68,.1);
+  border: 1px solid rgba(239,68,68,.3);
+  color: #fca5a5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Map wrapper ─────────────────────────────────────────────── */
+.map-wrap {
+  flex: 1;
+  min-height: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .dashboard-body { grid-template-columns: 1fr; }
+  .sidebar { border-top: 1px solid var(--border); }
+  .main-panel { border-right: none; }
+}
+@media (max-width: 600px) {
+  .app-wrap   { padding: 8px; }
+  .dashboard  { border-radius: 14px; }
+  .main-panel { padding: 12px; gap: 12px; }
+  .sidebar    { padding: 14px; }
+}

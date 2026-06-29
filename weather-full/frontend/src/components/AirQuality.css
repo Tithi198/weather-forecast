@@ -1,0 +1,12 @@
+.aq-wrap { display:flex; flex-direction:column; gap:16px; }
+.aq-top { display:flex; align-items:center; justify-content:space-between; }
+.aq-label-big { font-size:22px; font-weight:500; }
+.aq-sub { font-size:12px; color:var(--text-muted); margin-top:2px; }
+.aq-badge { padding:6px 14px; border-radius:20px; font-size:13px; font-weight:500; }
+.aq-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.aq-item { display:flex; flex-direction:column; gap:5px; }
+.aq-item-top { display:flex; justify-content:space-between; font-size:12px; }
+.aq-m-label { color:var(--text-muted); }
+.aq-m-val { color:var(--text); font-weight:500; }
+.aq-track { height:4px; background:var(--bg-card2); border-radius:2px; overflow:hidden; }
+.aq-fill { height:100%; border-radius:2px; transition:width .6s ease; }
